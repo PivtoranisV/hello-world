@@ -37,6 +37,23 @@
        <li>Learn how to code</li>
        <li>Sleep</li>
      </ol>
+     <p>You can enter text below</p>
+     <!--input elements are a convenient way to get input from user-->
+     <input type="text">
+     <!--input element with placeholder-->
+     <input type="text" placeholder="Enter your name">
+     <p>Please, submit your cat photo below</p>
+     <!--web forms that submit data to a server using nothing more than pure HTML-->
+     <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+      <input type="text" placeholder="cat photo URL" required>
+      <button type="submit">Submit></button>
+      <label for="indoor">
+        <input id="indoor" type="radio" name="indoor-outdoor">Indoor
+      </label>
+      <label for="outdor">
+        <input id="outdor" type="radio" name="indoor-outdoor">Outdoor
+      </label>
+     </form>
     </main>
     <footer id="footer">Contact information</footer>
   </body>
