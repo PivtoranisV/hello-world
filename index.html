@@ -45,15 +45,26 @@
      <p>Please, submit your cat photo below</p>
      <!--web forms that submit data to a server using nothing more than pure HTML-->
      <form action="https://www.freecatphotoapp.com/submit-cat-photo">
-      <input type="text" placeholder="cat photo URL" required>
-      <button type="submit">Submit></button>
       <label for="indoor">
-        <input id="indoor" type="radio" name="indoor-outdoor">Indoor
+        <input id="indoor" value="indoor" type="radio" name="indoor-outdoor"> Indoor
       </label>
-      <label for="outdor">
-        <input id="outdor" type="radio" name="indoor-outdoor">Outdoor
+      <label for="outdoor">
+        <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor"> Outdoor
       </label>
-     </form>
+      <br/>
+      <label for="loving">
+        <input id="loving" value="Loving" type="checkbox" name="personality"> Loving
+      </label>
+      <label for="lazy">
+        <input id="lazy" value="Lazy" type="checkbox" name="personality"> Lazy
+      </label>
+      <label for="energetic">
+        <input id="energetic" value="Lazy" type="checkbox" name="personality"> Energetic
+      </label>
+      <br/>
+      <input type="text" placeholder="cat photo URL" required>
+      <button type="submit">Submit</button>
+    </form>
     </main>
     <footer id="footer">Contact information</footer>
   </body>
