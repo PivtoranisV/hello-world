@@ -17,7 +17,7 @@
      <figure>
         <img src="./Memoji.jpeg" width="400" height="auto" alt="My memoji in yellow shirt">
         <figcaption><em>My Memoji</em></figcaption>
-    </figure>
+     </figure>
      <p>Tag p usually used to determine paragraphs of the text</p>
      <p>You can find a lot of <strong>interesting</strong>information about Programming at <a href="https://www.softserveinc.com/en-us" target="_blank">SoftServe</a></p>
      <!--Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document-->
@@ -47,26 +47,29 @@
      <p>Please, submit your cat photo below</p>
      <!--web forms that submit data to a server using nothing more than pure HTML-->
      <form action="https://www.freecatphotoapp.com/submit-cat-photo">
-      <label for="indoor">
+      <fieldset>
+        <legend>Is your cat an indoor or outdoor cat?</legend>
+       <label for="indoor">
         <input id="indoor" value="indoor" type="radio" name="indoor-outdoor"> Indoor
-      </label>
-      <label for="outdoor">
+       </label>
+       <label for="outdoor">
         <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor"> Outdoor
-      </label>
-      <br/>
-      <label for="loving">
+       </label>
+       <br/>
+       <label for="loving">
         <input id="loving" value="loving" type="checkbox" name="personality"> Loving
-      </label>
-      <label for="lazy">
+       </label>
+       <label for="lazy">
         <input id="lazy" value="lazy" type="checkbox" name="personality"> Lazy
-      </label>
-      <label for="energetic">
+       </label>
+       <label for="energetic">
         <input id="energetic" value="energetic" type="checkbox" name="personality"> Energetic
-      </label>
-      <br/>
-      <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-      <button type="submit">Submit</button>
-    </form>
+       </label>
+       <br/>
+       <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+       <button type="submit">Submit</button>
+      </fieldset>
+     </form>
     </main>
     <footer id="footer">Contact information</footer>
   </body>
