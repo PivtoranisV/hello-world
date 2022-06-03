@@ -1,3 +1,4 @@
+//Render Items
 function renderItems(items) {
       const itemsContainer = document.querySelector(".sale__items");
       for (const item of items) {
@@ -7,10 +8,19 @@ function renderItems(items) {
                   alt="${item.name}"> </a>
                   <a href="catalogue01.html" class="sale__items-item-link">${item.name}</a>
                   <p class="sale__items-item-price">$ ${item.price}</p>
-                  <button class="sale__items-item-button" type="button" data-bs-toggle="modal"
-                  data-bs-target="#shopping-cart-modal">Add to Cart</button>
+                  <button class="sale__items-item-button" type="button" onclick="addToCart(${item.id})">Add to Cart</button>
               </div>
               `;
       }
     }
     renderItems(items);
+
+    //cart array
+    let cart = [];
+
+
+    //Add to Cart
+    function addToCart(id){
+      const product = items.find((item) => item.id === id)
+      console.log(product);
+    }
