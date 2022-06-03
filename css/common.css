@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root {
+    --brand_color-main: #000000;
+    --brand_color-main-alt: #ffffff;
+    --brand_color-secondary: #f40106;
+    --brand_color-secondary-bright: red;
+    --brand_color-subtitle: rgba(34, 35, 35, 0.46);
+    --background-color: #222323;
+    --paragraph_text-color: #717474;
+    --line-color: #e0e0e0;
+    --stand-with-ukraine-blue: rgb(0, 139, 252);
+    --stand-with-ukraine-yellow: rgb(255, 255, 1);
+    --input-text-color: rgba(34, 35, 35, 0.12);
+    --paragraph-color-alt: rgba(255,255,255,0.65);
+    color: var(--brand_color-main);
+    scroll-behavior: smooth;
+}
+
+
+.main-wrapper,
+.header__top-banner,
+.navigation,
+.header__main-page-text,
+.header__main-page-button {
+    max-width: 1200px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 38px;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    h3 {
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 898px) {
+    h3 {
+        font-size: 52px;
+    }
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    h4 {
+        font-size: 23px;
+    }
+}
+
+@media (min-width: 992px) {
+    h4 {
+        font-size: 24px;
+    }
+}
+
+.special-dot {
+    color: var(--brand_color-secondary);
+}
+
+.special-divider {
+    border: none;
+    background-color: var(--brand_color-secondary);
+    height: 2px;
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .special-divider {
+        width: 30%;
+    }
+}
