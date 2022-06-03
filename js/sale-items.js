@@ -1,4 +1,4 @@
-[
+const items = [
     {
         "id": "1",
         "imgUrl": "img/sale/sale_adidas.jpeg",
@@ -29,4 +29,4 @@
         "name": "Reebok Workout Shorts",
         "price": 24.99
     }
-]
+];

@@ -1,5 +1,4 @@
-(async function () {
-    function renderItems(items) {
+function renderItems(items) {
       const itemsContainer = document.querySelector(".sale__items");
       for (const item of items) {
         itemsContainer.innerHTML += `
@@ -14,9 +13,4 @@
               `;
       }
     }
-  
-    const response = await fetch("sale-items.json");
-    const items = await response.json();
-  
     renderItems(items);
-  })();
