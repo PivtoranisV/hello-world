@@ -1,8 +1,8 @@
 //Render Items
 function renderItems(items) {
-      const itemsContainer = document.querySelector(".sale__items");
-      for (const item of items) {
-        itemsContainer.innerHTML += `
+  const itemsContainer = document.querySelector(".sale__items");
+  for (const item of items) {
+    itemsContainer.innerHTML += `
               <div class="sale__items-item a">
                   <a href="catalogue01.html" class="sale__items-item-img"> <img src="${item.imgUrl}"
                   alt="${item.name}"> </a>
@@ -11,16 +11,8 @@ function renderItems(items) {
                   <button class="sale__items-item-button" type="button" onclick="addToCart(${item.id})">Add to Cart</button>
               </div>
               `;
-      }
-    }
-    renderItems(items);
-
-    //cart array
-    let cart = [];
+  }
+}
+renderItems(items);
 
 
-    //Add to Cart
-    function addToCart(id){
-      const product = items.find((item) => item.id === id)
-      console.log(product);
-    }
