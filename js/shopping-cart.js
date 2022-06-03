@@ -34,6 +34,10 @@ function updateCart(){
 }
 
 // render cart products
-
+function renderCartProducts(){
+  cart.forEach(() => {
+    
+  })
+}
 
 
