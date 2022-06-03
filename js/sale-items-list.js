@@ -14,5 +14,3 @@ function renderItems(items) {
   }
 }
 renderItems(items);
-
-
